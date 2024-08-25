@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+#game-container {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-gap: 2px;
+    margin: 20px auto;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.cell:hover {
+    background-color: #5a5a5a;
+}
+
+.cell.selected {
+    background-color: #3a8eff;
+}
+
+.piece-A {
+    color: #ff4a4a;
+}
+
+.piece-B {
+    color: #4aff4a;
+}
+
+#move-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+#move-buttons button {
+    padding: 5px 10px;
+    background-color: #4a4a4a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#move-buttons button:hover {
+    background-color: #5a5a5a;
+}
+
+#piece-guide, #move-history {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#game-status {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#player-selection {
+    margin-bottom: 20px;
+}
+
+#player-selection button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#selected-piece {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #2a2a2a;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+#new-game-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

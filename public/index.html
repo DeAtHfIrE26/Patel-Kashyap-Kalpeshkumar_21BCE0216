@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Chess-like Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Advanced Chess-like Game</h1>
+        
+        <div id="player-selection">
+            <h2>Select Your Player</h2>
+            <button id="select-player-a">Player A</button>
+            <button id="select-player-b">Player B</button>
+        </div>
+
+        <div id="game-status"></div>
+        
+        <div id="game-board"></div>
+        
+        <div id="move-controls">
+            <div id="selected-piece"></div>
+            <div id="move-buttons"></div>
+        </div>
+        
+        <div id="piece-guide">
+            <h3>Piece Movement Guide</h3>
+            <ul>
+                <li>Pawn (P): Moves 1 step in any direction</li>
+                <li>Hero1 (H1): Moves up to 2 steps in any direction (↑ ↓ ← →)</li>
+                <li>Hero2 (H2): Moves up to 2 steps diagonally (↖ ↗ ↙ ↘)</li>
+                <li>Hero3 (H3): Moves up to 3 steps in any direction</li>
+            </ul>
+        </div>
+        
+        <div id="move-history">
+            <h3>Move History</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    
+    <div id="game-over-modal" class="modal">
+        <div class="modal-content">
+            <h2 id="game-over-message"></h2>
+            <button id="new-game-button">Start New Game</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

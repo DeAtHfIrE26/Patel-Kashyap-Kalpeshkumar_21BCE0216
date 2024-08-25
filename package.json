@@ -1,0 +1,13 @@
+{
+  "name": "advanced-chess-like-game",
+  "version": "1.0.0",
+  "description": "An advanced chess-like game with websocket communication",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.3.1"
+  }
+}
