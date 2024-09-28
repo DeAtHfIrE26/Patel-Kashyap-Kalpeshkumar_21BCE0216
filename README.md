@@ -2,7 +2,7 @@
 A turn-based chess-like game developed with server-client architecture utilizing websockets for real-time communication. Created as a submission for Hitwicket's recruitment challenge.
 # Chess-like Game Project
 
-I apologize for the late changes into the README.md. By mistake i need to make one change that's why i have to Re-commit it for the proper working. As i haven't made any changes into codes please do condier.Here's a comprehensive README file for the Chess-like Game project, including detailed step-by-step instructions on how to install all dependencies and set up the project properly.
+I apologize for the late changes into the README.md. By mistake i need to make one change that's why i have to Re-commit it for the proper working. As i haven't made any changes into codes please do consider.Here's a comprehensive README file for the Chess-like Game project, including detailed step-by-step instructions on how to install all dependencies and set up the project properly.
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
